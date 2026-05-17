@@ -1,0 +1,49 @@
+﻿@model CampusConnectMVC.Models.AddStudentViewModel
+
+<div class="container mt-5">
+
+    <div class="card shadow p-4 rounded-4">
+
+        <h2 class="text-center mb-4">
+            Add Student
+        </h2>
+
+        <form method="post">
+
+            <div class="mb-3">
+                <label>Name</label>
+                <input class="form-control"
+                       type="text"
+                       asp-for="Name" />
+            </div>
+
+            <div class="mb-3">
+                <label>Email</label>
+                <input class="form-control"
+                       type="email"
+                       asp-for="Email" />
+            </div>
+
+            <div class="mb-3">
+                <label>Course</label>
+                <input class="form-control"
+                       type="text"
+                       asp-for="Course" />
+            </div>
+
+            <div class="mb-3">
+                <label>Phone</label>
+                <input class="form-control"
+                       type="text"
+                       asp-for="Phone" />
+            </div>
+
+            <button class="btn btn-primary w-100">
+                Save Student
+            </button>
+
+        </form>
+
+    </div>
+
+</div>

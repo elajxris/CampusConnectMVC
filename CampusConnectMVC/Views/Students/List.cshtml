@@ -1,0 +1,70 @@
+﻿@model List<CampusConnectMVC.Models.Entities.Student>
+
+<div class="container mt-5">
+
+    <div class="custom-card">
+
+        <div class="d-flex justify-content-between mb-3">
+
+            <div>
+                <h2>Students List</h2>
+
+                <p class="text-muted">
+                    Manage and view student information.
+                </p>
+            </div>
+
+            <div>
+                <a class="btn btn-success"
+                       asp-controller="Students"
+                       asp-action="Add">
+                    Add Student
+                </a>
+            </div>
+
+        </div>
+
+        <table class="table table-hover">
+
+            <thead class="table-dark">
+
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Course</th>
+                    <th>Phone</th>
+                    <th>Action</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                @foreach (var student in Model)
+                {
+                    <tr>
+
+                        <td>@student.Name</td>
+                        <td>@student.Email</td>
+                        <td>@student.Course</td>
+                        <td>@student.Phone</td>
+
+                        <td>
+                            <a class="btn btn-warning btn-sm"
+                                   asp-controller="Students"
+                                   asp-action="Edit"
+                                   asp-route-id="@student.Id">
+                                Edit
+                            </a>
+                        </td>
+
+                    </tr>
+                }
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>

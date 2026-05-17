@@ -1,0 +1,59 @@
+﻿@model CampusConnectMVC.Models.Entities.Student?
+
+@if (Model == null)
+{
+    <p>No Student Found</p>
+}
+else
+{
+    <div class="container mt-5">
+
+        <div class="card shadow p-4 rounded-4">
+
+            <h2>Edit Student</h2>
+
+            <form method="post">
+
+                <input type="hidden" asp-for="Id" />
+
+                <div class="mb-3">
+                    <label>Name</label>
+                    <input class="form-control"
+                           asp-for="Name" />
+                </div>
+
+                <div class="mb-3">
+                    <label>Email</label>
+                    <input class="form-control"
+                           asp-for="Email" />
+                </div>
+
+                <div class="mb-3">
+                    <label>Course</label>
+                    <input class="form-control"
+                           asp-for="Course" />
+                </div>
+
+                <div class="mb-3">
+                    <label>Phone</label>
+                    <input class="form-control"
+                           asp-for="Phone" />
+                </div>
+
+                <button class="btn btn-primary">
+                    Update
+                </button>
+
+                <button class="btn btn-danger"
+                        type="submit"
+                        asp-action="Delete"
+                        asp-controller="Students">
+                    Delete
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+}

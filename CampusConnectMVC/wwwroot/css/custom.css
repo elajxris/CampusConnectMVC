@@ -1,0 +1,83 @@
+﻿body {
+    background-color: #fff5f8;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Navbar */
+
+.navbar {
+    background-color: #ffb6c1 !important;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+    .nav-link:hover {
+        color: #ffeef2 !important;
+    }
+
+/* Cards */
+
+.custom-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Buttons */
+
+.btn-primary {
+    background-color: #ff8fab;
+    border: none;
+}
+
+    .btn-primary:hover {
+        background-color: #ff7096;
+    }
+
+.btn-success {
+    background-color: #ffb6c1;
+    border: none;
+}
+
+    .btn-success:hover {
+        background-color: #ff8fab;
+    }
+
+/* Table */
+
+.table-dark {
+    background-color: #ff8fab !important;
+}
+
+/* Footer */
+
+footer {
+    background-color: #ffb6c1;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    margin-top: 40px;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 70px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
